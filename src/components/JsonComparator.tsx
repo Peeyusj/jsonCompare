@@ -110,7 +110,7 @@ const JsonComparator: React.FC = () => {
     <div className="flex flex-col gap-6 fade-in">
       <div className="flex flex-col sm:flex-row gap-4 mb-2">
         <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100">JSON Payload Comparison</h2>
-        <div className="flex gap-2 ml-auto">
+        <div className="flex gap-2 ml-auto flex-wrap">
           <div className="flex gap-2 items-center">
             <button
               onClick={() => toggleComparisonFactor('key')}
@@ -161,7 +161,7 @@ const JsonComparator: React.FC = () => {
           <select
             value={viewMode}
             onChange={(e) => setViewMode(e.target.value as EditorView)}
-            className="px-3 py-1 text-sm rounded bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
+            className="px-3 py-1 text-sm rounded bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors hidden sm:block"
           >
             <option value="split">Split View</option>
             <option value="horizontal">Horizontal View</option>
